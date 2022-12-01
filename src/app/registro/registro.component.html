@@ -1,0 +1,33 @@
+    <div >
+    <h1 *ngIf="registrado" class="text-center"> {{datoTexto | uppercase }} </h1>
+</div>
+    
+    <div>
+    <div class="row text-center" [ngClass]="{'clase2':estado2}" >
+        <h1>Inicia sesion</h1>
+    </div>
+
+    <div class="align-content-center" [ngClass]="{'clase2':estado2}">
+    <div class="row">
+        <form class="col-6">
+            <div class="form-group align-content-center">
+              <label for="nick">Ingresa tu nombre</label>
+              <input type="text" class="form-control" id="nick" placeholder="Ingresa correo" required >
+            </div>
+            <div class="form-group">
+              <label for="password">Ingresa tu password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <br>
+           <input type="button" value="registrar"  (click)="registrarusuario()">
+           <input type="button" value="salir">
+          </form>
+       </div>
+       
+    </div>
+    </div>
+   
+    <div>
+       
+    </div>
+    <br>
